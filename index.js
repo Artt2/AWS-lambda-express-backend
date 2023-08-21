@@ -1,4 +1,5 @@
 const app = require("./app");
+const serverless = require("serverless-http");
 
 //uncomment for local 
 /*
@@ -9,6 +10,9 @@ app.listen(PORT, () => {
 }); */
 
 //handler for the lambda function
+/*
 exports.handler = (event, context, callback) => {
   app(event, context, callback);
-};
+}; */
+
+exports.handler = serverless(app);

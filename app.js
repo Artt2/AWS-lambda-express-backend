@@ -8,4 +8,8 @@ const notesRouter = require("./controllers/notes");
 
 app.use("/notes", notesRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+})
+
 module.exports = app;
