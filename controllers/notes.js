@@ -2,6 +2,10 @@ const notesRouter = require("express").Router();
 const dbConnection = require("../config/db.js");
 const noteQueries = require("../queries/notesQueries.js");
 
+notesRouter.get("/test", (req, res) => {
+  res.json({test: "returning test!"});
+});
+
 notesRouter.get("/", (req, res) => {
   dbConnection.query(noteQueries.getAllNotes, (err, data) => {
     if (err) {
