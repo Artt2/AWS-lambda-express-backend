@@ -1,6 +1,6 @@
 # Express backend REST API deployed fully to AWS
 
-A simple backend REST API developed with NodeJS and Express deployed fully to AWS. Express application deployed as a **Lambda** function, MySQL database hosted on **RDS** and accessed through API deployed on **API Gateway**. **VPC** configuration for database and lambda, access management with **IAM**.
+A simple backend REST API developed with NodeJS and Express deployed fully to AWS. Express application deployed as a **Lambda** function, **MySQL** database hosted on **RDS** and accessed through API deployed on **API Gateway**. **VPC** configuration for database and lambda, access management with **IAM**.
 
 ## AWS Services used
 - **AWS Management Console**
